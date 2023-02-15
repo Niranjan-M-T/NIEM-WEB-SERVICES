@@ -123,5 +123,8 @@ body {
     footer p {
       font-size: 16px;
     }
+    .footerh4{
+      text-align: center !important;
+    }
   }
   

@@ -3,7 +3,12 @@ body {
     font-family: 'Helvetica Neue', sans-serif;
     margin: 0;
     padding: 0;
-    
+    padding-top: 85px;
+  }
+  
+
+  html{
+    scroll-behavior: smooth;
   }
   
   .container {
@@ -23,6 +28,13 @@ body {
     background-color: #000 !important;
     color: #fff;
     font-size: 18px;
+  }
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    overflow: hidden;
   }
   
   .navbar-brand {
@@ -58,6 +70,22 @@ body {
     font-weight: bold;
     text-align: center;
   }
+
+  .parallax {
+    height: 400px;
+    background-image: url('/Assets/Images/graphicdesign.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .parallax-content {
+    color: #fff;
+    text-align: center;
+    padding-top: 150px;
+  }
+  
   
   /* Services section styles */
   .services {
@@ -73,23 +101,31 @@ body {
   .services-item {
     text-align: center;
     margin-bottom: 50px;
+    padding-left: 3px;
+
   }
   
   .services-item i {
     font-size: 48px;
     color: #5cb85c;
     margin-bottom: 20px;
+    padding-left: 3px;
+
   }
   
   .services-item h3 {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 20px;
+    padding-left: 3px;
+
   }
   
   .services-item p {
     font-size: 18px;
     line-height: 1.5;
+    padding-left: 3px;
+
   }
   
   /* Footer styles */

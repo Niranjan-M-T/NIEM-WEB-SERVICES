@@ -35,6 +35,9 @@ body {
     z-index: 999;
     overflow: hidden;
   }
+  .navbar {
+    border-bottom: 1px solid white;
+  }
   
   .navbar-brand {
     font-size: 24px;
@@ -69,11 +72,11 @@ body {
     font-weight: bold;
     text-align: center;
   }
-  
+
 /* Parallax */
   .parallax {
     height: 400px;
-    background-image: url('/Assets/Images/graphicdesign.png');
+    background-image: url('/Assets/Images/laptop.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;

@@ -6,7 +6,6 @@ body {
     padding-top: 85px;
   }
   
-
   html{
     scroll-behavior: smooth;
   }
@@ -70,7 +69,8 @@ body {
     font-weight: bold;
     text-align: center;
   }
-
+  
+/* Parallax */
   .parallax {
     height: 400px;
     background-image: url('/Assets/Images/graphicdesign.png');

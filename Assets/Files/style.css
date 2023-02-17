@@ -264,7 +264,48 @@ body {
     font-size: 1.5rem;
   }
 }
-
+/* Latest Tech Section */
+/* Latest Technologies Section */
+.latest-tech-section {
+  padding: 100px 0;
+  text-align: center;
+  background-color: #f7f7f7;
+}
+.latest-tech-section .title {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.latest-tech-section .card {
+  border: none;
+  margin: 30px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+.latest-tech-section .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+}
+.latest-tech-section .card .card-body {
+  text-align: center;
+}
+.latest-tech-section .card .card-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.latest-tech-section .card .card-text {
+  font-size: 18px;
+  line-height: 28px;
+}
+.latest-tech-section .card i {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #3a3a3a;
+}
 
   /* Footer styles */
   footer {

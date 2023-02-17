@@ -8,7 +8,16 @@
   <link rel="stylesheet" href="/Assets/Files/style.css">
   <link rel="shortcut icon" href="Assets/Images/icon.ico">
   <script src="https://kit.fontawesome.com/dfb52cc6f9.js" crossorigin="anonymous"></script>
-  <!-- <script src="/Assets/Files/main.js"></script> -->
+  <script src="/Assets/Files/main.js"></script>
+  <script src="node_modules/wowjs/dist/wow.js"></script>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <!-- <link rel="stylesheet" type="text/css" href="/node_modules/animate.css/animate.min.css"> -->
+  <!-- <link rel="stylesheet" type="text/css" href="animate.css"> -->
+  <script>
+    new WOW().init();
+  </script>
 
 </head>
 <body>
@@ -54,76 +63,196 @@
   </div>
 </section>
 
+<!-- WOW.js Initialisation -->
+<script>
+  new WOW().init({
+    offset: 100, // Number of pixels from the bottom of the viewport that the animation should be triggered
+  });
+  </script>
+
+
 <!-- Services Section -->
-<div class="container services">
-  <h2>Our Services</h2>    
-  <div class="row lead">
-    <div class="col-md-6">
-      <div class="service-box vaga-fade-in">
-        <img src="/Assets/Images/10.png" alt="Web Development">
-        <h3 data-textify="">Web Development</h3>
-        <p>We create custom websites tailored to your business needs.</p>
+<section class="services-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-heading text-center">
+          <h2 class="wow fadeInDown">Our Services</h2>
+          <p class="wow fadeInUp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut dui euismod, fermentum augue sit amet, faucibus augue.</p>
+        </div>
       </div>
     </div>
-    <div class="col-md-6">
-      <div class="service-box">
-        <img src="/Assets/Images/05.png" alt="Graphic Design">
-        <h3>Graphic Design</h3>
-        <p>We design stunning graphics for your marketing materials.</p>
+    <div class="row">
+      <div class="col-md-4 col-sm-6">
+        <div class="service-item wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0s">
+          <i class="fa fa-code"></i>
+          <h3>Website Development</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
       </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-6">
-      <div class="service-box">
-        <img src="/Assets/Images/18.png" alt="Branding Solutions">
-        <h3>Branding Solutions</h3>
-        <p>We help you build a strong brand identity that sets you apart.</p>
+      <div class="col-md-4 col-sm-6">
+        <div class="service-item wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
+          <i class="fa fa-paint-brush"></i>
+          <h3>Graphic Design</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
       </div>
-    </div>
-    <div class="col-md-6">
-      <div class="service-box">
-        <img src="/Assets/Images/19.png" alt="Printing Solutions">
-        <h3>Printing Solutions</h3>
-        <p>We provide high-quality printing services for your business needs.</p>
+      <div class="col-md-4 col-sm-6">
+        <div class="service-item wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.4s">
+          <i class="fa fa-certificate"></i>
+          <h3>Branding Solutions</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
       </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-6">
-      <div class="service-box">
-        <img src="/Assets/Images/18.png" alt="Branding Solutions">
-        <h3>Branding Solutions</h3>
-        <p>We help you build a strong brand identity that sets you apart.</p>
+      <div class="col-md-4 col-sm-6">
+        <div class="service-item wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.6s">
+          <i class="fa fa-print"></i>
+          <h3>Printing Solutions</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
       </div>
-    </div>
-    <div class="col-md-6">
-      <div class="service-box">
-        <img src="/Assets/Images/19.png" alt="Printing Solutions">
-        <h3>Printing Solutions</h3>
-        <p>We provide high-quality printing services for your business needs.</p>
+      <div class="col-md-4 col-sm-6">
+        <div class="service-item wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.8s">
+          <i class="fa fa-share-alt"></i>
+          <h3>Social Media Marketing</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
       </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-6">
-      <div class="service-box">
-        <img src="/Assets/Images/18.png" alt="Branding Solutions">
-        <h3>Branding Solutions</h3>
-        <p>We help you build a strong brand identity that sets you apart.</p>
-      </div>
-    </div>
-    <div class="col-md-6">
-      <div class="service-box">
-        <img src="/Assets/Images/19.png" alt="Printing Solutions">
-        <h3>Printing Solutions</h3>
-        <p>We provide high-quality printing services for your business needs.</p>
+      <div class="col-md-4 col-sm-6">
+        <div class="service-item wow fadeInRight" data-wow-duration="1s" data-wow-delay="1s">
+          <i class="fa fa-wifi"></i>
+          <h3>Hardware and Networking</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
       </div>
     </div>
   </div>
-</div>
+</section>
 
+  <!-- Why Choose us   -->
+  <section id="why-choose-us">
+    <div class="container">
+      <h2 class="text-center">Why Choose Us?</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card wow animate__fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
+            <div class="card-body">
+              <h5 class="card-title">Expertise</h5>
+              <p class="card-text">Our team of experts has years of experience in their respective fields and can provide you with the best solutions to meet your needs.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card wow animate__fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+            <div class="card-body">
+              <h5 class="card-title">Customer Satisfaction</h5>
+              <p class="card-text">We are committed to providing you with the best customer service and making sure that you are completely satisfied with our work.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card wow animate__fadeInRight" data-wow-duration="1s" data-wow-delay="0.6s">
+            <div class="card-body">
+              <h5 class="card-title">Affordability</h5>
+              <p class="card-text">We offer competitive pricing without compromising the quality of our work. We believe in providing value for money.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- About us -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center mb-5">
+          <h2 class="section-heading">About Us</h2>
+          <div class="section-heading-line"></div>
+        </div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-lg-6 order-lg-2">
+          <img class="img-fluid rounded mb-4 mb-lg-0" src="https://via.placeholder.com/500x500" alt="Team photo">
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <p class="lead mb-5">We are a group of high school students who are passionate about web design and development.
+             Our team consists of talented and creative individuals who are always striving to learn and grow. Our startup
+              was founded with the goal of making a meaningful impact in the web design world by providing innovative and
+               fresh ideas to our clients. We are dedicated to delivering high-quality and visually appealing websites that 
+               meet the needs of our clients and exceed their expectations. </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Latest technologies  -->
+<section id="latest-technologies" class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="text-center mb-5">Latest Technologies We Use</h2>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card mb-4">
+          <img class="card-img-top" src="https://via.placeholder.com/300x200" alt="HTML5 Logo">
+          <div class="card-body">
+            <h5 class="card-title">HTML5</h5>
+            <p class="card-text">The latest version of HTML, used for structuring and presenting content on the web.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card mb-4">
+          <img class="card-img-top" src="https://via.placeholder.com/300x200" alt="CSS3 Logo">
+          <div class="card-body">
+            <h5 class="card-title">CSS3</h5>
+            <p class="card-text">The latest version of CSS, used for styling web pages and web applications.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card mb-4">
+          <img class="card-img-top" src="https://via.placeholder.com/300x200" alt="JavaScript Logo">
+          <div class="card-body">
+            <h5 class="card-title">JavaScript</h5>
+            <p class="card-text">A high-level programming language used for creating interactive web pages and web applications.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card mb-4">
+          <img class="card-img-top" src="https://via.placeholder.com/300x200" alt="React Logo">
+          <div class="card-body">
+            <h5 class="card-title">React</h5>
+            <p class="card-text">A JavaScript library for building user interfaces, developed by Facebook.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card mb-4">
+          <img class="card-img-top" src="https://via.placeholder.com/300x200" alt="Node.js Logo">
+          <div class="card-body">
+            <h5 class="card-title">Node.js</h5>
+            <p class="card-text">A JavaScript runtime built on Chrome's V8 JavaScript engine, used for server-side programming.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card mb-4">
+          <img class="card-img-top" src="https://via.placeholder.com/300x200" alt="Bootstrap Logo">
+          <div class="card-body">
+            <h5 class="card-title">Bootstrap</h5>
+            <p class="card-text">A popular front-end framework for building responsive, mobile-first web pages and web applications.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
+  
+  
   <!-- Footer -->
   <footer id="Footer"class="bg-dark text-light">
     <div class="container py-3">

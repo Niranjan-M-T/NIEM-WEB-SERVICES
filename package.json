@@ -1,0 +1,23 @@
+{
+  "name": "niem",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Niranjan-M-T/NIEM-WEB-SERVICES.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Niranjan-M-T/NIEM-WEB-SERVICES/issues"
+  },
+  "homepage": "https://github.com/Niranjan-M-T/NIEM-WEB-SERVICES#readme",
+  "description": "",
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "wowjs": "^1.1.3"
+  }
+}

@@ -78,7 +78,7 @@ body {
   }
 
 /* Parallax */
-  .parallax {
+  .parallax1 {
     height: 500px;
     background-image: url('/Assets/Images/laptop.jpg');
     background-attachment: fixed;
@@ -87,7 +87,7 @@ body {
     background-size: cover;
   }
   
-  .parallax-content {
+  .parallax-content1 {
     color: #fff;
     text-align: center;
     padding-top: 150px;
@@ -215,44 +215,69 @@ body {
 }
 /* About us */
 
-#about {
-  background-color: #f8f9fa;
+.about-us {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.section-heading {
-  font-size: 2rem;
-  font-weight: 600;
-  /* margin-bottom: 2rem; */
-  text-transform: uppercase;
+.parallax {
+  max-height: 400px;
+  background-image: url('/Assets/Images/graphicdesign.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.wchcustomcont{
-    background-color: #f8f8f8;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px #ccc;
-    padding: 20px;
-    margin: 10px;
-    text-align: center;
-    width: 80%;
-    margin: 0 auto;
-    
+/* .parallax::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+} */
+.about-us{
+  color: aliceblue;
+}
+.parallax .cunt{
+  color: #000000;
+  background-color: rgba(255, 255, 255, 0.5)
+}
+
+/* .container {
+  z-index: 1;
+} */
+/* .parallax video{
+  animation-play-state: running;
+  pointer-events: none;
+}
+
+.video-container {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  /* position: relative;
+}
+
+.video-container video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+} */ 
+
+
+/* @media (max-width: 767px) {
+  .parallax {
+    background-attachment: scroll;
   }
-.customh2{
-  padding: 0px;
-  padding-bottom: -10px !important;
 }
-  
-/* .section-heading-line {
-  border-top: 3px solid #008080;
-  margin: auto;
-  width: 50%;
-} */
 
-/* .lead {
-  font-size: 1.25rem;
-  line-height: 1.5;
-  margin-bottom: 2rem;
-} */
 
 @media (min-width: 992px) {
   .col-lg-6 {
@@ -280,7 +305,7 @@ body {
   .section-heading {
     font-size: 1.5rem;
   }
-}
+} */
 /* Latest Tech Section */
 /* Latest Technologies Section */
 .latest-tech-section {

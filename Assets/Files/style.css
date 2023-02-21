@@ -256,19 +256,23 @@ body {
 /* About us */
 
 .about-us {
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.about-us .parallax {
-  max-height: 400px;
+#latest-technologies .parallax {
+  /* max-height: 400px; */
   background-image: url('/Assets/Images/graphicdesign.png');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.tech-h2{
+  color: white;
+  background-color: rgb(31, 28, 28) !important;
 }
 
 /* .parallax::before {
@@ -281,13 +285,13 @@ body {
   background-color: rgba(255, 255, 255, 0.5);
 } */
 .about-us{
-  color: aliceblue;
+  color: black;
 }
-.about-us .parallax .cunt{
+/* .about-us .parallax .cunt{
   color: #000000;
   background-color: rgba(255, 255, 255, 0.5);
   text-shadow: 2px 2px #888888;
-}
+} */
 
 /* .container {
   z-index: 1;

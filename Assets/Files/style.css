@@ -201,7 +201,7 @@ body {
 }
 
 .service-item.wow.animated {
-  visibility: visible;
+  visibility: hidden;
   animation-name: fadeInUp;
 }
 .service-item i{

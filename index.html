@@ -30,122 +30,48 @@
     new WOW().init();
   </script>
 </head>
-<body onload="myFunction()">
+<body>
 <!-- Loader -->
-<style>
-  #loader {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  z-index: 1;
-  width: 120px;
-  height: 120px;
-  margin: -76px 0 0 -76px;
-  border: 16px solid black;
-  border-radius: 50%;
-  border-top: 16px solid #3498db;
-  -webkit-animation: spin 2s linear infinite;
-  animation: spin 2s linear infinite;
-}
 
-@-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
-}
+  <!-- Navigation Bar -->
+  <nav id='navbar'class="navbar navbar-expand-md navbar-dark bg-dark">
+    <a class="navbar-brand" href="#"><img src="/Assets/Images/logo.png" alt="Nimien Tech"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#toppg">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Services">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Footer">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Footer">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-</style>
-<div id="loader"></div>
-<script>
-  var myVar;
-  
-  function myFunction() {
-    myVar = setTimeout(showPage, 3000);
-  }
-  
-  function showPage() {
-    document.getElementById("loader").style.display = "none";
-    document.getElementById("myDiv").style.display = "block";
-  }
-  </script>
-
-<section style="display:none;" id="myDiv" class="animate-bottom">  
-<!-- Navigation Bar -->
-<nav id='navbar'class="navbar navbar-expand-md navbar-dark bg-dark">
-  <a class="navbar-brand" href="#"><img src="/Assets/Images/logo.png" alt="Nimien Tech"></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="#toppg">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#Services">Services</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#Footer">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#Footer">Contact</a>
-      </li>
-    </ul>
+  <section id='toppg'class="front-pg">
+  <div class="parallax">
+    <video autoplay loop muted playsinline>
+      <!-- <iframe src="https://onedrive.live.com/embed?cid=D88C3A929FD4F29B&resid=D88C3A929FD4F29B%21157&authkey=AD9AVggdjDcsmDM" width="320" height="169" frameborder="0" scrolling="no" allowfullscreen></iframe> -->
+      <source src="https://niranjan-m-t.github.io/NIEM-WEB-SERVICES/Assets/clips/video1.mp4" type="video/mp4" alt="Nimien Tech">
+      Your browser does not support the video tag.
+    </video>
+    <div class="parallax-overlay"></div>
+    <div class="parallax-content">
+      <h1>Welcome to NIMIEN Tech</h1>
+      <p>We provide high-quality tech solutions for your business needs.</p>
+      <!-- Your content here -->
+    </div>
   </div>
-</nav>
-
-<style>
-  #loading-frame {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-</style>
-
-<!-- Jumbotron -->
-<!-- <div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1>Welcome to NIMIEN Tech</h1>
-    <p>We provide high-quality tech solutions for your business needs.</p>
-  </div>
-</div> -->
-
-<!-- Parallax -->
-
-<!-- <section class="parallax1">
-  <div class="parallax-content1">
-    <h2 class="lead">Give the proffesional look to your websites</h2>
-    <p class="lead2">By using the latest technology</p>
-  </div>
-</section> -->
-<section id='toppg'class="front-pg">
-<div class="parallax">
-  <video autoplay loop muted playsinline>
-    <!-- <iframe src="https://onedrive.live.com/embed?cid=D88C3A929FD4F29B&resid=D88C3A929FD4F29B%21157&authkey=AD9AVggdjDcsmDM" width="320" height="169" frameborder="0" scrolling="no" allowfullscreen></iframe> -->
-    <source src="https://niranjan-m-t.github.io/NIEM-WEB-SERVICES/Assets/clips/video1.mp4" type="video/mp4" alt="Nimien Tech">
-    Your browser does not support the video tag.
-  </video>
-  <div class="parallax-overlay"></div>
-  <div class="parallax-content">
-    <h1>Welcome to NIMIEN Tech</h1>
-    <p>We provide high-quality tech solutions for your business needs.</p>
-    <!-- Your content here -->
-  </div>
-</div>
-</section>
-
-
-<!-- WOW.js Initialisation -->
-<!-- <script>
-  new WOW().init({
-    offset: 1000, // Number of pixels from the bottom of the viewport that the animation should be triggered
-  });
-  </script> -->
+  </section>
 
 <!-- Services Section -->
 <section id="Services" class="services-section">
@@ -382,7 +308,6 @@
       </div>
     </div>
   </footer>
-</section>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

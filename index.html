@@ -29,11 +29,50 @@
   <script>
     new WOW().init();
   </script>
-
-
 </head>
-<body>
+<body onload="myFunction()">
+<!-- Loader -->
+<style>
+  #loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid black;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+</style>
+<div id="loader"></div>
+<script>
+  var myVar;
   
+  function myFunction() {
+    myVar = setTimeout(showPage, 3000);
+  }
+  
+  function showPage() {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("myDiv").style.display = "block";
+  }
+  </script>
+
+<section style="display:none;" id="myDiv" class="animate-bottom">  
 <!-- Navigation Bar -->
 <nav id='navbar'class="navbar navbar-expand-md navbar-dark bg-dark">
   <a class="navbar-brand" href="#"><img src="/Assets/Images/logo.png" alt="Nimien Tech"></a>
@@ -343,7 +382,7 @@
       </div>
     </div>
   </footer>
-  
+</section>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

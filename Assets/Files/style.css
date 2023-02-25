@@ -220,6 +220,54 @@ body {
   line-height: 60px;
 }
 
+
+/* Green India  */
+
+#go-green-section {
+  padding: 100px 0;
+  background-color: #f8f9fa;
+}
+
+.section-heading {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.section-description {
+  font-size: 18px;
+  text-align: center;
+}
+
+.box {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+.box-icon {
+  font-size: 50px;
+  color: #28a745;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.box-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.box-description {
+  font-size: 16px;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+
 /* why choose us section  */
 #why-choose-us {
   padding: 80px 0;

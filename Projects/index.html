@@ -23,22 +23,13 @@
   <script src="/node_modules/wowjs/dist/wow.js"></script>  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
-  <!-- Scroll Magic -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js" integrity="sha512-RvUydNGlqYJapy0t4AH8hDv/It+zKsv4wOQGb+iOnEfa6NnF2fzjXgRy+FDjSpMfC3sjokNUzsfYZaZ8QAwIxg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js" integrity="sha512-5/OHwmQzDSBS0Ous4/hlYoWLHd06/d2r7LdKZQVBXOA6PvOqWVXtdboiLTU7lQTGyVoKVTNkwi0ol4gHGlw5ww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenLite.min.js" integrity="sha512-pvDW4tehKKsohH97164HwKwRGFpzayEFWTVbk8HuUoLIQ7Jp+WLN5XYokVuoCj2aT6dy8ihbW8SRTG1k0W4mSQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineLite.min.js" integrity="sha512-tSIDeirKC6suYILHqqPuZH3s0MvD4a5vCHXhBIcdmq4gQXZ2IB3fEYA5x2f3D2p/CbSqzKEvuTEVbS5VZ2u+ew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/CSSPlugin.min.js" integrity="sha512-ocsFo48WU8Xq6Y1Lwi7psXRAujG9E4TKNR4q1DbrKzaaxOMTEoao/a+mDoB+cYzY4lwbyxvqjkp/ZA1/MNlfsg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/BezierPlugin.min.js" integrity="sha512-plyexAULVlTExvDn2yUZFJV9F8q+53MC/GpU9dEuNGXmrrI3J8Rcffjvxg3OOBALBvF+UILPLIBEoCeF2maqTQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-
   <script> new WOW().init(); </script>
 
   <link rel="stylesheet" href="pr-style.css">
 </head>
   
 <body onload="loadfunction()">
+  
 
   <script>
     function loadfunction(){
@@ -47,9 +38,10 @@
 
   </script>
   <div id="loading">  
-    <div class="cup">
-      <div class="h"></div>
-    </div>
+    <div class="loader">
+      <span>Loading...</span>
+      <span>Loading...</span>
+  </div>
   </div>
 
   <!-- Navigation Bar -->
@@ -89,7 +81,18 @@
             <div class="card-body">
               <h3 class="card-title">Restraunt Menu</h3>
               <p class="card-text">See an amazing digital menu of a Grill Restraunt with parallax background and animation effects</p>
-              <a href="/Projects/Menu Card Template/" class="btn btn-primary">View Project</a>
+              <!-- <a href="/Projects/Menu Card Template/" class="btn btn-primary">View Project</a> -->
+              <a href="/Projects/Menu Card Template/" class="btn">
+                <strong>View</strong>
+                <div id="container-stars">
+                  <div id="stars"></div>
+                </div>
+                <div id="glow">
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                </div>
+              </a>
+              
             </div>
           </div>
         </div>
@@ -98,9 +101,17 @@
             <img src="/Assets/Images/fernando-andrade-TrD7yA09Vg8-unsplash.jpg" alt="Project 2" class="card-img-top">
             <div class="card-body">
               <h3 class="card-title">Project 2</h3>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <a href="#" class="btn btn-primary">View Project</a>
-            </div>
+              <p class="card-text">See an amazing digital menu of a Grill Restraunt with parallax background and animation effects</p>
+              <a href="/Projects/Menu Card Template/" class="btn">
+                <strong>View</strong>
+                <div id="container-stars">
+                  <div id="stars"></div>
+                </div>
+                <div id="glow">
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                </div>
+              </a>            </div>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 col-sm-12 wow fadeInRight">
@@ -108,14 +119,45 @@
             <img src="/Assets/Images/lucas-andrade-uKnerTWwbGA-unsplash.jpg" alt="Project 3" class="card-img-top">
             <div class="card-body">
               <h3 class="card-title">Project 3</h3>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <a href="#" class="btn btn-primary">View Project</a>
-            </div>
+              <p class="card-text">See an amazing digital menu of a Grill Restraunt with parallax background and animation effects</p>
+              <a href="/Projects/Menu Card Template/" class="btn">
+                <strong>View</strong>
+                <div id="container-stars">
+                  <div id="stars"></div>
+                </div>
+                <div id="glow">
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                </div>
+              </a>            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
   
+  <!-- Footer -->
+  <footer id="Footer"class="bg-dark text-light">
+    <div class="container py-3">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>About Us</h2>
+            <p>We are a group of high school students who are passionate about web design and development.
+              Our team consists of talented and creative individuals who are always striving to learn and grow. Our startup
+               was founded with the goal of making a meaningful impact in the web design world by providing innovative and
+                fresh ideas to our clients. We are dedicated to delivering high-quality and visually appealing websites that 
+                meet the needs of our clients and exceed their expectations.</p>
+              </div>
+        <div class="col-md-6">
+          <h4 class="footerh4">Contact Us</h4>
+          <p>682005 Kochi<br>Kerala , India<br>Phone: 8089296854<br>Email: info@nimientech.com</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 </html>

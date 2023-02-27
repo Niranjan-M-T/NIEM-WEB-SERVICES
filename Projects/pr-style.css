@@ -1,20 +1,8 @@
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 0;
   /* background-color: #343a40; */
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%239C92AC' fill-opacity='0.25' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"), linear-gradient(to right top, #343a40, #2b2c31, #211f22, #151314, #000000);
+  background-image: url(/Assets/Images/spacebg.jpg);
   }
-
-  /* #loading{
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: white;
-    z-index: 99999;
-    display: none;
-  } */
 
   #loading{
     position: fixed;
@@ -25,51 +13,44 @@ body {
     background-color: #000000;
     z-index: 9998;
   }
-  .cup{
-    width: 200px;
-    height: 150px;
-    border: 5px solid #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    border-radius: 0 0 60px 60px;
-    background: url(https://i.postimg.cc/76GJvK5x/coffee.png);
-    background-repeat: repeat-x;
-    animation: fill 3s infinite;
-    z-index: 9999;
-  }
-  
-  @keyframes fill{
-    0%{
-      background-position: 0 140px;
+    .loader {
+      top: 50%;
+      left: 50%;
+      right: 50%;
+      bottom: 50%;
+      position: relative;
     }
-    20%{
-      background-position: -450px 100px;
+    
+    .loader span {
+      position: absolute;
+      color: #fff;
+      transform: translate(-50%, -50%);
+      font-size: 38px;
+      letter-spacing: 5px;
     }
-    40%{
-      background-position: -900px 50px;
+    
+    .loader span:nth-child(1) {
+      color: transparent;
+      -webkit-text-stroke: 0.3px rgb(128, 198, 255);
     }
-    80%{
-      background-position: -1350px -50px;
+    
+    .loader span:nth-child(2) {
+      color: rgb(128, 198, 255);
+      -webkit-text-stroke: 1px rgb(128, 198, 255);
+      animation: uiverse723 3s ease-in-out infinite;
     }
-    100%{
-      background-position: 0 140px;
+    
+    @keyframes uiverse723 {
+      0%, 100% {
+        clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 
+         54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+      }
+    
+      50% {
+        clip-path: polygon(0% 60%, 16% 65%, 34% 66%, 
+         51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+      }
     }
-  }
-  
-  .h{
-    z-index: 999999;
-    height: 60px;
-    width: 20px;
-    border: 5px solid #fff;
-    position: relative;
-    left: 200px;
-    top: 20px;
-    border-radius: 0 20px 20px 0;
-  }
-
-  
   .section-title {
     font-size: 36px;
     font-weight: bold;
@@ -109,20 +90,170 @@ body {
   }
   
   .btn {
-    background-color: #070655;
-    border: none;
-    color: #fff;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 13rem;
+    height: 3rem;
+    background-size: 300% 300%;
+    backdrop-filter: blur(1rem);
+    border-radius: 5rem;
+    transition: 0.5s;
+    animation: gradient_301 5s ease infinite;
+    border: double 4px transparent;
+    background-image: linear-gradient(#212121, #212121),  linear-gradient(137.48deg, #ffdb3b 10%,#FE53BB 45%, #8F51EA 67%, #0044ff 87%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+  }
+  
+  #container-stars {
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: 0.5s;
+    backdrop-filter: blur(1rem);
+    border-radius: 5rem;
+  }
+  
+  strong {
+    z-index: 2;
+    font-family: 'Avalors Personal Use';
+    font-size: 12px;
+    letter-spacing: 5px;
+    color: #FFFFFF;
+    text-shadow: 0 0 4px white;
+  }
+  
+  #glow {
+    position: absolute;
+    display: flex;
+    width: 12rem;
+  }
+  
+  .circle {
+    width: 100%;
+    height: 30px;
+    filter: blur(2rem);
+    animation: pulse_3011 4s infinite;
+    z-index: -1;
+  }
+  
+  .circle:nth-of-type(1) {
+    background: rgba(254, 83, 186, 0.636);
+  }
+  
+  .circle:nth-of-type(2) {
+    background: rgba(142, 81, 234, 0.704);
+  }
+  
+  .btn:hover #container-stars {
+    z-index: 1;
+    background-color: #212121;
   }
   
   .btn:hover {
-    background-color: #001bb1;
+    transform: scale(1.1)
   }
   
+  .btn:active {
+    border: double 4px #FE53BB;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    animation: none;
+  }
+  
+  .btn:active .circle {
+    background: #FE53BB;
+  }
+  
+  #stars {
+    position: relative;
+    background: transparent;
+    width: 200rem;
+    height: 200rem;
+  }
+  
+  #stars::after {
+    content: "";
+    position: absolute;
+    top: -10rem;
+    left: -100rem;
+    width: 100%;
+    height: 100%;
+    animation: animStarRotate 90s linear infinite;
+  }
+  
+  #stars::after {
+    background-image: radial-gradient(#ffffff 1px, transparent 1%);
+    background-size: 50px 50px;
+  }
+  
+  #stars::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 170%;
+    height: 500%;
+    animation: animStar 60s linear infinite;
+  }
+  
+  #stars::before {
+    background-image: radial-gradient(#ffffff 1px, transparent 1%);
+    background-size: 50px 50px;
+    opacity: 0.5;
+  }
+  
+  @keyframes animStar {
+    from {
+      transform: translateY(0);
+    }
+  
+    to {
+      transform: translateY(-135rem);
+    }
+  }
+  
+  @keyframes animStarRotate {
+    from {
+      transform: rotate(360deg);
+    }
+  
+    to {
+      transform: rotate(0);
+    }
+  }
+  
+  @keyframes gradient_301 {
+    0% {
+      background-position: 0% 50%;
+    }
+  
+    50% {
+      background-position: 100% 50%;
+    }
+  
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  @keyframes pulse_3011 {
+    0% {
+      transform: scale(0.75);
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    }
+  
+    70% {
+      transform: scale(1);
+      box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+  
+    100% {
+      transform: scale(0.75);
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+  }
   

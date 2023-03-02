@@ -1,7 +1,16 @@
 body {
   margin: 0;
-  /* background-color: #343a40; */
-  background-image: url(/Assets/Images/spacebg.jpg);
+  }
+
+  /* Parallax background */
+  .parallax {
+    background-image: url('/Assets/Images/spacebg.jpg');
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
   }
 
   #loading{

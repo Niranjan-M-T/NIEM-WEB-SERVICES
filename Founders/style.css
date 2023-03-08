@@ -48,20 +48,24 @@
 
 main section h1{
     padding-bottom: 20px !important;
+    padding-top: 50px;
 }
 
 main section img{
     max-width: 300px !important;
 }
 
-/* main section div .col-md-6 p{
-    max-width: fit-content;
-    border: #8f8c8c solid 2px;
+ main section div .col-md-6 p{
+    background-color: #ffffff;
+    padding: 20px;
     border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    height: 100%;
+
 }
 
 main section div .col-md-6 p:hover{
     border: #535252 solid 2px;
     box-shadow: #535252;
 
-} */
+} 

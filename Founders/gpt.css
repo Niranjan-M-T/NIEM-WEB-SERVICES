@@ -1,0 +1,30 @@
+body {
+  background-color: #f7f7f7;
+}
+
+.col-lg-8 h1{
+
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 16px;
+  line-height: 1.5;
+}

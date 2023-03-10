@@ -49,6 +49,7 @@
 main section h1{
     padding-bottom: 20px !important;
     padding-top: 50px;
+  
 }
 
 main section img{
@@ -69,3 +70,13 @@ main section div .col-md-6 p:hover{
     box-shadow: #535252;
 
 } 
+
+@media only screen 
+and (max-device-width: 600px)
+ {
+  main section h1{
+    max-width: 100%;
+  }
+
+
+ }

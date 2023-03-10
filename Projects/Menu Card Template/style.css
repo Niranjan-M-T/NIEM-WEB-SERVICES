@@ -1,6 +1,6 @@
 /* Default styles */
 * {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     margin: 0;
     padding: 0;
   }
@@ -73,8 +73,10 @@
   
   /* Parallax background */
   .parallax {
+    float: left;
     background-image: url('/Assets/Images/bbq_bg.jpg');
-    height: 100%;
+    /* height: 100%; */
+    width: 100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;

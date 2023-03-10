@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  main {
+    margin: 20px;
+  }
+  
+  article {
+    margin-bottom: 40px;
+  }
+  
+  article h2 {
+    margin-top: 0;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+
+    /* Navigation bar styles */
+    .navbar {
+        background-color: #000 !important;
+        color: #fff;
+        font-size: 18px;
+      }
+      .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 999;
+        overflow: hidden;
+      }
+      .navbar {
+        border-bottom: 1px solid white;
+      }
+      
+      .navbar-brand {
+        font-size: 24px;
+        font-weight: bold;
+      }
+      .navbar-brand img{
+        max-width: 300px;
+      }
+      
+      .nav-link {
+        color: #fff !important;
+      }
+      
+      .nav-link:hover {
+        color: #ddd !important;
+      }
+    

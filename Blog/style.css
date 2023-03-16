@@ -1,16 +1,23 @@
+html{
+  background-image: url(/Assets/Images/circuit\ bg.jpg);
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: rgba(255, 255, 255, 0.61);
+    background-image: url(/Assets/Images/circuit\ bg.jpg);
+
   }
   
   
   main {
-    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.822);
   }
   
   article {
-    margin-bottom: 40px;
+    padding-bottom: 40px;
   }
   
   article h2 {
@@ -20,41 +27,42 @@ body {
   footer {
     background-color: #333;
     color: #fff;
-    padding: 20px;
     text-align: center;
   }
   
 
-    /* Navigation bar styles */
-    .navbar {
-        background-color: #000 !important;
-        color: #fff;
-        font-size: 18px;
-      }
-      .navbar {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 999;
-        overflow: hidden;
-      }
-      .navbar {
-        border-bottom: 1px solid white;
-      }
-      
-      .navbar-brand {
-        font-size: 24px;
-        font-weight: bold;
-      }
-      .navbar-brand img{
-        max-width: 300px;
-      }
-      
-      .nav-link {
-        color: #fff !important;
-      }
-      
-      .nav-link:hover {
-        color: #ddd !important;
-      }
-    
+/* Navigation bar styles */
+.navbar {
+  background-color: #000 !important;
+  color: #fff;
+  font-size: 18px;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  overflow: hidden;
+}
+.navbar {
+  border-bottom: 1px solid white;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+}
+.navbar-brand img{
+  max-width: 300px;
+}
+
+.nav-link {
+  color: #fff !important;
+}
+
+.nav-link:hover {
+  color: #ddd !important;
+}
+#first{
+  padding-top: 80px;
+}
